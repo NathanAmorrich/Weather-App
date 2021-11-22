@@ -1,31 +1,33 @@
 import React from 'react';
 import Title from '../components/Title.js';
 import ResearchBar from '../components/ResearchBar.js';
-import CityCard from '../components/CityCard.js';
+import CityCard from '../components/CityCard';
 import Footer from '../components/Footer.js';
 import CityIllustration from '../components/CityIllustration.js';
 import reportWebVitals from '../reportWebVitals';
 
+//Renders the components of the home page
 class HomePage extends React.Component
 {
-  render(){
+  render()
+  {
     return(
         <React.StrictMode>
 
           <div className = "wrapper_1">
-            <Title title = "Welcome to the weather app"/>
+            <Title title = "Welcome to the Weather App"/>
             <ResearchBar />
           </div>
       
-        <div className = "wrapper_2">
-          <div className ="Tallinn_pic" ></div>
-          <CityCard city_name = "Tallinn"/>
-          <CityCard city_name = "Paris"/>
-          <div className ="Paris_pic"></div>
-          <div className ="Berlin_pic"></div>
-          <CityCard city_name = "Berlin"/>
-          <Footer/>
-          <div className ="Arcachon_pic"></div>
+          <div className = "wrapper_2">
+            <div className = "Tallinn_pic"/> 
+            <CityCard city_name = "Tallinn"/>
+            <CityCard city_name = "Paris"/>
+            <div className = "Paris_pic"/>
+            <div className = "Berlin_pic"/>
+            <CityCard city_name = "Berlin"/>
+            <Footer/>
+            <div className ="Arcachon_pic"></div>
         </div>
       
         </React.StrictMode>

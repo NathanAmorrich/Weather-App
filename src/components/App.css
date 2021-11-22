@@ -1,6 +1,5 @@
 
 body{
-  /*background: linear-gradient(rgba(0, 0, 255, 0.597), white);*/
   background-image: url(../pictures/back4.jpg);
   background-position: center;
   background-size: cover;
@@ -12,7 +11,7 @@ body{
   border-radius: 20px;
   padding: 10px;
   width: 1000px;
-
+  margin-bottom: 50px;
   background-color: rgba(105, 105, 105, 0.7);
   border-color: rgba(105, 105, 105, 0.7);
 
@@ -23,19 +22,22 @@ body{
   font-size: 50px;
   color: rgb(255, 255, 255);
   font-family: 'Roboto';
-  
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-start: 2;
+}
+
+.units_list{
+  color: black;
+  background-color:white;
+  border-radius: 15px;
+  border: none;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 .researchBlock {  
-    
   background-color: rgba(105, 105, 105, 0.7);
   border-color: rgba(105, 105, 105, 0.7);
-  
-  border-style: none;
+  margin-bottom: 50px ;
   border-radius: 20px;
   border-width: 4px;
 
@@ -44,15 +46,9 @@ body{
   width: 350px;
 
   text-align: center;
-  
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-start: 3;
 }
 
-.InputValue{
-    
+.InputValue{ 
   border: none;
   border-radius: 15px;
   height: 25px;
@@ -76,72 +72,58 @@ button:hover{
   background: gray;
 }
 
-.CityCard{  
-
+.CityPic{
   border-style: none;
-  background-color: rgba(105, 105, 105, 0.7);
-  border-color: rgba(105, 105, 105, 0.7);
-  border-radius: 20px;
-  height: 230px;
-  line-height: 20px;
-  width: 180px;
-  padding: 10px;
-
-  margin-top: 50px;
-
-  color: rgba(255,255,255,1);
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px ;
-  
-  text-align: Left;
-
-}
-
-.Tallinn_info{  
-
-  border-style: none;
-  background-color: rgba(105, 105, 105, 0.7);
-  border-color: rgba(105, 105, 105, 0.7);
-  border-radius: 20px;
-  height: 230px;
-  line-height: 20px;
-  width: 180px;
-  padding: 10px;
-
-  color: rgba(255,255,255,1);
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px ;
-  
-  text-align: Left;
-
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-
-.Tallinn_pic{  
-
-  border-style: none;
-  
+    
   border-radius: 15px;
   border-width: 4px;
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../pictures/Tallinn.jpg"); 
       
-  margin-top: 50px;
+  height: 250px;
+  line-height: 100px;
+  width: 200px;
+}
 
+.CityCard{  
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 20px;
+  height: 230px;
+  line-height: 20px;
+  width: 180px;
+  padding: 10px;
+
+  color: rgba(255,255,255,1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px ;
+  
+  text-align: Left;
+}
+
+.city_name{
+  display: inline-block;
+}
+
+.Tallinn_pic{  
+  border-style: none;
+  
+  border-radius: 15px;
+  border-width: 4px;
+
+  background-image: url("../pictures/Tallinn.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      
   height: 250px;
   line-height: 100px;
   width: 200px;
 }
 
 .Paris_pic { 
-
   border-style: none;
   background-color: rgba(105, 105, 105, 0.7);
   border-color: rgba(105, 105, 105, 0.7);
@@ -152,41 +134,14 @@ button:hover{
   line-height: 100px;
   width: 200px;
 
-  margin-top: 50px;
+  background-image: url("../pictures/Paris.jpg");
 
-  background-image: url(../pictures/Paris.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-.Paris_info{  
-
-  border-style: none;
-  background-color: rgba(105, 105, 105, 0.7);
-  border-color: rgba(105, 105, 105, 0.7);
-  border-radius: 20px;
-  height: 230px;
-  line-height: 20px;
-  width: 180px;
-  padding: 10px;
-
-  color: rgba(255,255,255,1);
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px ;
-  
-  text-align: Left;
-
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-
-
 .Berlin_pic {  
-
   border-style: none;
   background-color: rgba(105, 105, 105, 0.7);
   border-color: rgba(105, 105, 105, 0.7);
@@ -196,8 +151,6 @@ button:hover{
   line-height: 20px;
   width: 180px;
   padding: 10px;
-
-  margin-top: 50px;
 
   background-image: url("../pictures/Berlin.jpg"); 
   background-position: center;
@@ -205,33 +158,7 @@ button:hover{
   background-repeat: no-repeat;
 }
 
-.Berlin_info{  
-
-  border-style: none;
-  background-color: rgba(105, 105, 105, 0.7);
-  border-color: rgba(105, 105, 105, 0.7);
-  border-radius: 15px;
-  padding: 10px;
-  
-  height: 230px;
-  line-height: 20px;
-  width: 180px;
-  
-  
-  color: rgba(255,255,255,1);
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px ;
-
-  text-align: Left;
-
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
 .Arcachon_pic {
-    
   border-style: none;
   background-color: rgba(105, 105, 105, 0.7);
   border-color: rgba(105, 105, 105, 0.7);
@@ -260,23 +187,24 @@ button:hover{
   padding: 10px;
 
   color: rgb(255, 255, 255);
-      font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
 .wrapper_1 {
   display: grid;
-  grid-auto-rows: auto;
-  row-gap: 10px;
+  grid-template-rows: auto;
   justify-items: center;
   align-items: center;
 }
 
 .wrapper_2 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto auto;
-    row-gap: 25px;
-    justify-items: center;
-    align-items: center;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+  column-gap: 75px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }

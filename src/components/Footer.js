@@ -1,8 +1,10 @@
 import './App.css';
 import React from 'react'
 
+// Renders the footer
 class Footer extends React.Component{
-    render(){
+    render()
+    {
         return(
             
             <div class="footer">        

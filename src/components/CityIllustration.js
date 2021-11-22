@@ -1,24 +1,31 @@
 import './App.css';
 import React from 'react'
 
+// Renders the city picture card according the city's name
 class CityIllustration extends React.Component{
     constructor(props)
     {
         super(props);
-        this.state = {path : ""};
+        this.state = {city_name : ""};        
     }
 
-    static getDerivedStateFromProps(props, state) {
-        return {path: props.path};
+    static getDerivedStateFromProps(props, state) 
+    {
+        return {city_name: props.city_name};
     }
 
-    render(){
+    render()
+    {
         return(
-            <div>
-                {console.log(this.state.path)}
-                <img src={this.state.path} alt="" width = "100" height = "100" ></img>
+            <div className ="CityPic" id="CityPic">
             </div>
         )
+    }
+
+    componentDidMount()
+    {
+        var cityPic = document.getElementById("CityPic");
+        cityPic.style.backgroundImage = "url('https://source.unsplash.com/500x400/?"+this.state.city_name+"')";  
     }
 }
 

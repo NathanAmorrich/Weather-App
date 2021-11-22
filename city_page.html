@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title class = "title">Weather App</title>
+<title class = "PageTitle">Weather App</title>
 <link rel="shortcut icon" type="image/x-icon" href="pictures/icone.ico" />
 
     <head>
@@ -11,22 +11,35 @@
 
         <!--Grid--> 
         <div class="wrapper_1">
-
-            <div class="titleBlock"> 
-                Weather in ?
+            <div class="titleBlock" id = titleBlock> 
+                <div class="title">
+                    <h1> </h1>
+                </div>
+                <select class = "units_list" id = "units_list" onchange = location.reload()>
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
             </div>
+        </div>
             
+        <div class="wrapper_2">
+
+            <div class="city_pic" id = "city_pic"></div>
+
             <div class="city_info">
                 <h1 class="name">?</h1>
-                <img src="" alt="" class="icon" />
                 <p class = "desc">?</p>
                 <p class = "temp">?</p>
                 <p class = "humidity">?</p>
                 <p class = "wind">?</p>
             </div>
+        </div>     
 
-        </div>
-     
+        <div id="openweathermap-widget-21"></div>
+        <script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+        <script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 21,q='Lanton, FR',appid: 'd78f4606c5ba94c8b3d176f95d59163a',units: 'metric',containerid: 'openweathermap-widget-21',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
+
+
     </body>
 
     <script src = "script_city_page.js"></script>

@@ -16,7 +16,6 @@ input[type=text] {
   }
 
 .titleBlock {
-    border-style:none;
     border-radius: 20px;
     padding: 10px;
     width: 1000px;
@@ -31,32 +30,31 @@ input[type=text] {
     font-size: 50px;
     color: rgb(255, 255, 255);
     font-family: 'Roboto';
-    
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-start: 2;
 }
 
 .researchBlock {  
     
     background-color: rgba(105, 105, 105, 0.7);
     border-color: rgba(105, 105, 105, 0.7);
-    
-    border-style: none;
+    margin-bottom: 50px ;
     border-radius: 20px;
     border-width: 4px;
-
+  
     height: 75px;
     line-height: 75px;
     width: 350px;
-
+  
     text-align: center;
-    
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-start: 3;
+}
+
+.units_list{
+
+    color: black;
+    background-color:white;
+    border-radius: 15px;
+    border: none;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 .InputValue{
@@ -101,8 +99,8 @@ button:hover{
     line-height: 100px;
     width: 200px;
 
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -124,8 +122,8 @@ button:hover{
     
     text-align: Left;
 
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
 }
@@ -149,8 +147,8 @@ button:hover{
 
     background-image: url(pictures/Paris.jpg);
 
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -177,8 +175,8 @@ button:hover{
     font-size: 18px ;
     text-align: Left;
 
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -205,8 +203,8 @@ button:hover{
     background-size: cover;
     background-repeat: no-repeat;
     
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
 }
@@ -230,8 +228,8 @@ button:hover{
   
     text-align: Left;
 
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
@@ -239,23 +237,6 @@ button:hover{
 .name_Berlin{
     text-align: center;
     font-family: 'Roboto', sans-serif;
-}
-
-.footer {  
-    border-style: none;
-    background-color: rgba(105, 105, 105, 0.7);
-    border-color: rgba(105, 105, 105, 0.7);
-    border-radius: 15px;
-    padding: 10px;
-
-    color: rgb(255, 255, 255);
-        font-family: 'Roboto', sans-serif;
-    text-align: center;
-
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-start: 4;   
 }
 
 .Arcachon_pic {
@@ -279,25 +260,44 @@ button:hover{
     color: rgb(255, 255, 255);
     text-align: center;
 
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5; 
 }
 
-.wrapper_1 {
-    display: inline-grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 5px 200px;
-    justify-items: center;
-    align-items: center;
+.footer {  
+    border-style: none;
+    background-color: rgba(105, 105, 105, 0.7);
+    border-color: rgba(105, 105, 105, 0.7);
+    border-radius: 15px;
+    padding: 10px;
+
+    color: rgb(255, 255, 255);
+        font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-start: 4;   
 }
 
+.wrapper_1 {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 50px;
+    justify-items: center;
+    align-items: center;
+  }
+
 .wrapper_2 {
-    display: inline-grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px 300px;
-   
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    row-gap: 50px;
+    column-gap: 75px;
+    justify-content: center;
     justify-items: center;
     align-items: center;
 }

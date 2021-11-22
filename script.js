@@ -1,10 +1,23 @@
+
 let weather = {
   API_Key : "d78f4606c5ba94c8b3d176f95d59163a",
   fetchWeather: function(city_searched) {
+
+    unitSelected = document.getElementById("units_list").value;
+    
+    if(unitSelected == "°C")
+    {
+      unitAPICall = "metric" ;
+    } 
+    else
+    {
+      unitAPICall = "imperial" ;
+    }
+    
     fetch(
       'https://api.openweathermap.org/data/2.5/weather?q='
       +city_searched
-      +'&units=metric&appid='
+      +'&units='+unitAPICall+'&appid='
       +this.API_Key
 
     )
@@ -21,7 +34,7 @@ let weather = {
     if(name == "Tallinn" || name == "Paris" || name == "Berlin"){
       //document.querySelector(".icon_"+name).src = "https://openweathermap.org/img/wn/"+icon+"@2x.png";
       document.querySelector(".desc_"+name).innerHTML = description;
-      document.querySelector(".temp_"+name).innerHTML = temp+"°C";
+      document.querySelector(".temp_"+name).innerHTML = temp+" "+unitSelected;
       document.querySelector(".humidity_"+name).innerHTML = "Humidity : "+humidity+"%";
       document.querySelector(".wind_"+name).innerHTML = "Wind speed: "+speed+"km/h";
     }

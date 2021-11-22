@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title Weather App></title>
+<title class = "PageTitle">Weather App</title>
 <link rel="shortcut icon" type="image/x-icon" href="pictures/icone.ico" />
 
     <head>
@@ -14,7 +14,7 @@
 
             <div class="titleBlock"> 
                 Welcome to the Weather App 
-                <select name="units_list" id="units_list">
+                <select class = "units_list" id = "units_list" onchange = location.reload()>
                     <option value="°C">°C</option>
                     <option value="°F">°F</option>
                 </select>
@@ -32,7 +32,7 @@
 
             <div class="Tallinn_info">
                 <h1 class="name_Tallinn">Tallinn</h1>
-                <img src="" alt="" class="icon_Tallinn" />
+                <!-- <img src="" alt="" class="icon_Tallinn" /> -->
                 <p class = "desc_Tallinn">cloudy</p>
                 <p class = "temp_Tallinn">10°C</p>
                 <p class = "humidity_Tallinn">Humidity : 60%</p>
@@ -43,7 +43,7 @@
 
             <div class="Paris_info">
                 <h1 class="name_Paris">Paris</h1>
-                <img src="" alt="" class="icon_Paris" />
+                <!-- <img src="" alt="" class="icon_Paris" /> -->
                 <p class = "desc_Paris">cloudy</p>
                 <p class = "temp_Paris">10°C</p>
                 <p class = "humidity_Paris">Humidity : 60%</p>
@@ -54,7 +54,7 @@
 
             <div class="Berlin_info">
                 <h1 class="name_Berlin">Berlin</h1>
-                <img src="" alt="" class="icon_Berlin" />
+                <!-- <img src="" alt="" class="icon_Berlin" /> -->
                 <p class = "desc_Berlin">cloudy</p>
                 <p class = "temp_Berlin">10°C</p>
                 <p class = "humidity_Berlin">Humidity : 60%</p>

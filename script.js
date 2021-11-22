@@ -7,11 +7,13 @@ let weather = {
     
     if(unitSelected == "°C")
     {
-      unitAPICall = "metric" ;
+      unitAPICall = "metric";
+      windUnit = " km/h";
     } 
     else
     {
-      unitAPICall = "imperial" ;
+      unitAPICall = "imperial";
+      windUnit = " mph";
     }
     
     fetch(
@@ -36,7 +38,7 @@ let weather = {
       document.querySelector(".desc_"+name).innerHTML = description;
       document.querySelector(".temp_"+name).innerHTML = temp+" "+unitSelected;
       document.querySelector(".humidity_"+name).innerHTML = "Humidity : "+humidity+"%";
-      document.querySelector(".wind_"+name).innerHTML = "Wind speed: "+speed+"km/h";
+      document.querySelector(".wind_"+name).innerHTML = "Wind speed: "+speed+windUnit;
     }
     else{
     }
@@ -47,7 +49,7 @@ let weather = {
   },
   
   redirect : function(){
-    window.location = "http://127.0.0.1:5501/city_page.html";
+    window.location = "http://127.0.0.1:5502/city_page.html";
   },
 };
 

@@ -15,10 +15,12 @@ let weather = {
       if(unitSelected == "°C")
       {
         unitAPICall = "metric" ;
+        windUnit = " km/h";
       } 
       else
       {
         unitAPICall = "imperial" ;
+        windUnit = " mph";
       }
 
       fetch(
@@ -43,7 +45,7 @@ let weather = {
       document.querySelector(".desc").innerHTML = description;
       document.querySelector(".temp").innerHTML = temp+" "+unitSelected;
       document.querySelector(".humidity").innerHTML = "Humidity : "+humidity+"%";
-      document.querySelector(".wind").innerHTML = "Wind speed: "+speed+" km/h";
+      document.querySelector(".wind").innerHTML = "Wind speed: "+speed+windUnit;
     },
 };
 

@@ -17,7 +17,6 @@ class CitySearched extends React.Component
       }
     }  
       
-
     getMyStringValue = async () => 
     {  try 
       { 
@@ -46,7 +45,6 @@ class CitySearched extends React.Component
       this.getMyStringValue();  
   }
   
-
   render()
   {
     console.log("RENDER "+this.state.cityName)

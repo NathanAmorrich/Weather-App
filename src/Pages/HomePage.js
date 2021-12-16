@@ -3,6 +3,7 @@ import {ImageBackground, View, StyleSheet, Text, ScrollView, Button} from "react
 import Title from "../components/Title"
 import ResearchBar from "../components/ResearchBar";
 import CityCard from "../components/CityCard";
+import Footer from "../components/Footer";
 
 const ViewStyleProps = () => {
     return (
@@ -14,6 +15,7 @@ const ViewStyleProps = () => {
         <CityCard city_name = "Tallinn"/>
         <CityCard city_name = "Paris"/>
         <CityCard city_name = "Berlin"/>
+        <Footer/>
         </ImageBackground>
       </View> 
     </ScrollView>

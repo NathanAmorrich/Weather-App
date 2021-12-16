@@ -1,0 +1,210 @@
+
+body{
+  background-image: url(../pictures/back4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.titleBlock {
+  border-style:none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 1000px;
+  margin-bottom: 50px;
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+
+  height: 100px;
+  line-height: 100px;
+
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto';
+}
+
+.units_list{
+  color: black;
+  background-color:white;
+  border-radius: 15px;
+  border: none;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.researchBlock {  
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  margin-bottom: 50px ;
+  border-radius: 20px;
+  border-width: 4px;
+
+  height: 75px;
+  line-height: 75px;
+  width: 350px;
+
+  text-align: center;
+}
+
+.InputValue{ 
+  border: none;
+  border-radius: 15px;
+  height: 25px;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color : gray;
+}
+
+button{
+  appearance: button;
+  border : none;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  
+  background-color: rgba(255, 255, 255, 1)
+}
+
+button:hover{
+  background: gray;
+}
+
+.CityPic{
+  border-style: none;
+    
+  border-radius: 15px;
+  border-width: 4px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      
+  height: 250px;
+  line-height: 100px;
+  width: 200px;
+}
+
+.CityCard{  
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 20px;
+  height: 230px;
+  line-height: 20px;
+  width: 180px;
+  padding: 10px;
+
+  color: rgba(255,255,255,1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px ;
+  
+  text-align: Left;
+}
+
+.city_name{
+  display: inline-block;
+}
+
+.Tallinn_pic{  
+  border-style: none;
+  
+  border-radius: 15px;
+  border-width: 4px;
+
+  background-image: url("../pictures/Tallinn.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      
+  height: 250px;
+  line-height: 100px;
+  width: 200px;
+}
+
+.Paris_pic { 
+  border-style: none;
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 15px;
+  border-width: 4px;
+  
+  height: 250px;
+  line-height: 100px;
+  width: 200px;
+
+  background-image: url("../pictures/Paris.jpg");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Berlin_pic {  
+  border-style: none;
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 20px;
+  
+  height: 230px;
+  line-height: 20px;
+  width: 180px;
+  padding: 10px;
+
+  background-image: url("../pictures/Berlin.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Arcachon_pic {
+  border-style: none;
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 20px;
+  
+  height: 100px;
+  width: 180px;
+  padding: 10px;
+
+  background-image: url("../pictures/Arcachon.jpg"); 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-color: rgba(47, 100, 213, 0.802);
+
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.footer {  
+  border-style: none;
+  background-color: rgba(105, 105, 105, 0.7);
+  border-color: rgba(105, 105, 105, 0.7);
+  border-radius: 15px;
+  padding: 10px;
+
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.wrapper_1 {
+  display: grid;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper_2 {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: auto auto;
+  row-gap: 50px;
+  column-gap: 75px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}

@@ -49,7 +49,7 @@ let weather = {
   },
   
   redirect : function(){
-    window.location = "http://127.0.0.1:5502/city_page.html";
+    window.location = "http://127.0.0.1:5500/Weather-App-main/city_page.html";
   },
 };
 
